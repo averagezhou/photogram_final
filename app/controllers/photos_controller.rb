@@ -46,7 +46,7 @@ class PhotosController < ApplicationController
     @photo = Photo.find(params.fetch("id_to_modify"))
 
     @photo.likes_count = params.fetch("likes_count")
-    @photo.owner_id = params.fetch("owner_id")
+    
     @photo.caption = params.fetch("caption")
     @photo.image = params.fetch("image")
 
